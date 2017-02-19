@@ -20,13 +20,31 @@ namespace XamarinDelegate.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView twLista { get; set; }
+        UIKit.UISegmentedControl seletor { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView table { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextView twLista { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
             if (btVoltar != null) {
                 btVoltar.Dispose ();
                 btVoltar = null;
+            }
+
+            if (seletor != null) {
+                seletor.Dispose ();
+                seletor = null;
+            }
+
+            if (table != null) {
+                table.Dispose ();
+                table = null;
             }
 
             if (twLista != null) {

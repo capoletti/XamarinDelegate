@@ -17,15 +17,38 @@ namespace XamarinDelegate.iOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton btListar { get; set; }
 
-        [Action ("Listar:")]
+        [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void Listar (UIKit.UIButton sender);
+        UIKit.UIButton btValidar { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField txCode { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField txUser { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
             if (btListar != null) {
                 btListar.Dispose ();
                 btListar = null;
+            }
+
+            if (btValidar != null) {
+                btValidar.Dispose ();
+                btValidar = null;
+            }
+
+            if (txCode != null) {
+                txCode.Dispose ();
+                txCode = null;
+            }
+
+            if (txUser != null) {
+                txUser.Dispose ();
+                txUser = null;
             }
         }
     }

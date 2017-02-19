@@ -116,6 +116,9 @@
     <Compile Include="ViewControllerAzul.designer.cs">
       <DependentUpon>ViewControllerAzul.cs</DependentUpon>
     </Compile>
+    <Compile Include="TableSource.cs" />
+    <Compile Include="UITextFieldCodeDelegate.cs" />
+    <Compile Include="Validations.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
